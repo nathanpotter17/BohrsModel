@@ -1,0 +1,52 @@
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 8rem;
+  left: 2rem;
+  gap: 1rem;
+  z-index: 10;
+  max-height: 325px;
+  overflow-y: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #ffffff07;
+  scrollbar-width: thin;
+  scrollbar-color: #2c3a53 #00000000;
+}
+
+.buttonContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.buttonContainer::-webkit-scrollbar-thumb {
+  border: 4px solid transparent;
+  border-radius: 10px;
+  background-clip: content-box;
+  background-color: #2c3a53;
+}
+
+.button {
+  background-color: #00000000;
+  border-radius: 10px;
+  border: 3px solid #2c3a53;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  background-color: #3458976f;
+}
+
+@media (max-width: 1000px) {
+  .buttonContainer {
+    top: 5rem;
+    left: 0.1rem;
+    height: 230px;
+    scale: 0.7;
+  }
+}
